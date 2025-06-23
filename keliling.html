@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keliling Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="luas.html">Hitung Luas</a></li>
+            <li><a href="keliling.html" class="active">Hitung Keliling</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Keliling Segitiga</h1>
+        <div class="card">
+            <img src="img/triangle.jpg" alt="Segitiga">
+            <p>Rumus: K = a + b + c</p>
+            <form id="perimeterForm">
+                <input type="number" id="sideA" placeholder="Masukkan sisi a" required>
+                <input type="number" id="sideB" placeholder="Masukkan sisi b" required>
+                <input type="number" id="sideC" placeholder="Masukkan sisi c" required>
+                <div class="buttons">
+                    <button type="submit" class="btn">Hitung</button>
+                    <button type="reset" class="btn reset">Reset</button>
+                </div>
+            </form>
+            <div class="result">
+                <p>Keliling Segitiga: <span id="perimeterResult">0</span> cm</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
